@@ -25,7 +25,7 @@ void setup() {
     SD.remove(CountFile_Name);
   }
   File CountFile = SD.open(CountFile_Name, FILE_WRITE);
-  CountFile.print("001");
+  CountFile.print("123");
   CountFile.close();
 
   /* ----- Countファイルから最新の番号を取得 ----- */
