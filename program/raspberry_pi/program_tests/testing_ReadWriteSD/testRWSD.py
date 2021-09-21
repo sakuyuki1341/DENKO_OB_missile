@@ -2,7 +2,7 @@ import time
 
 path = '~/Documents/test.txt'
 
-f = open(path)
+f = open(path, mode='w')
 start = time.time()
 for i in range(1000):
 	f.write(str(i)+"\n")
