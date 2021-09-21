@@ -1,6 +1,6 @@
 import time
 
-path = '~/Documents/test.txt'
+path = 'test.txt'
 
 f = open(path, mode='w')
 start = time.time()
