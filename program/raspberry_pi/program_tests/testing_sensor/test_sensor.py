@@ -3,8 +3,8 @@ import time
 
 MPU_WHO_AM_I =		0x75	# Read Only
 MPU_PWR_MGMT_1 =	0x6B	# Read and Write
-MPU_ADDRESS =			0x68
-MPU_REGISTER =			0x3B	# Read Only
+MPU_ADDRESS =		0x68
+MPU_REGISTER =		0x3B	# Read Only
 
 BYTE = 14	# データが格納されているbyte数
 
@@ -35,6 +35,6 @@ while (True):
 	gyro_y = gyRaw / 131.0
 	gyro_z = gzRaw / 131.0
 
-	print('{0:02.3f}, {1:02.3f}, {2:02.3f}, {3:02.3f}, {4:02.3f}, {5:02.3f}'.format(acc_x, acc_y, acc_z, gyro_x, gyro_y, gyro_z))
+	print('{0:04.3f}, {1:04.3f}, {2:04.3f}, {3:04.3f}, {4:04.3f}, {5:04.3f}'.format(acc_x, acc_y, acc_z, gyro_x, gyro_y, gyro_z))
 
 	time.sleep(0.001)
