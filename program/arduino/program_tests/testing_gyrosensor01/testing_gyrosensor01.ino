@@ -14,10 +14,10 @@ void setup() {
 	Serial.begin(115200);	//115200bps
 
 	// 初回の読み出し
-	Wire.beginTransmission(MPU_ADDRESS);
-	Wire.write(MPU6050_WHO_AM_I);	//MPU6050_PWR_MGMT_1
-	Wire.write(0x00);
-	Wire.endTransmission();
+//	Wire.beginTransmission(MPU_ADDRESS);
+//	Wire.write(MPU6050_WHO_AM_I);	//MPU6050_PWR_MGMT_1
+//	Wire.write(0x00);
+//	Wire.endTransmission();
 
 	// 動作モードの読み出し
 	Wire.beginTransmission(MPU_ADDRESS);
